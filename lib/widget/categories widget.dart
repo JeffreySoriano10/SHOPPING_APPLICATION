@@ -7,10 +7,10 @@ class CategoriesWidget extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          for (int i = 1; i < 7; i++)
+          for (int i = 1; i < 4; i++)
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 10),
-              padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+              margin: EdgeInsets.symmetric(horizontal: 15),
+              padding: EdgeInsets.symmetric(vertical: 4, horizontal: 15),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20),
@@ -19,17 +19,10 @@ class CategoriesWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Image.asset(
-                    "images/$i.png",
-                    width: 40,
-                    height: 40,
-                  ),
-                  Text(
-                    'Alcohol',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 17,
-                      color: Color(0xFF004D40),
-                    ),
+                    "images/LOGOS/$i.png",
+                    width: 70,
+                    height: 70,
+                    fit: BoxFit.fill,
                   ),
                 ],
               ),

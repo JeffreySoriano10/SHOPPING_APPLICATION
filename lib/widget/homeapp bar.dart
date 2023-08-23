@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:neww/pages/cart.dart';
 
 class HomeAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      // drawer: CartPage(),
+      // appBar: AppBar(
+      //   title: const Text("konek2CART"),
+      //   backgroundColor: Color(0xFF004D40),
+      //
+      // ),
       color: Colors.white,
       padding: EdgeInsets.all(25),
       child: Row(
@@ -11,7 +18,7 @@ class HomeAppBar extends StatelessWidget {
           InkWell(
             onTap: () {
               // goes back to previous screen/page
-              Navigator.pushNamed(context, "cartPage");
+              Navigator.pushNamed(context, "menu");
             },
             child: Icon(
               Icons.sort,

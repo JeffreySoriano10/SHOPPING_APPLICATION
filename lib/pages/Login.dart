@@ -126,18 +126,17 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     SizedBox(height: 5),
-                    Container(
-                      margin: EdgeInsets.only(left: 15, right: 15),
-                      alignment: Alignment.centerRight,
-                      child: TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "Forgot Password?",
-                          style: TextStyle(
-                            color: Color(0xFF00695C),
-                            fontSize: 14,
-                            fontWeight: FontWeight.w600,
-                          ),
+                    TextButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, "forgotPassword");
+
+                      },
+                      child: Text(
+                        "Forgot Password?",
+                        style: TextStyle(
+                          color: Color(0xFF00695C),
+                          fontWeight: FontWeight.w500,
+                          fontSize: 16,
                         ),
                       ),
                     ),

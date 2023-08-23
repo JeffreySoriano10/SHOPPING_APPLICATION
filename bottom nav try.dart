@@ -1,13 +1,10 @@
-import 'package:curved_labeled_navigation_bar/curved_navigation_bar.dart';
-import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:neww/widget/best%20selling.dart';
 import 'package:neww/widget/categories%20widget.dart';
-import 'package:neww/widget/best selling.dart';
+import 'package:neww/widget/homeapp%20bar.dart';
 
-import '../widget/homeapp bar.dart';
+class HomePagee extends StatelessWidget {
 
-class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -91,42 +88,6 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: CurvedNavigationBar(
-          backgroundColor: Colors.transparent,
-          onTap: (index) {},
-          height: 70,
-          color: Color(0xFF137865),
-          items: [
-            CurvedNavigationBarItem(
-              child: Icon(
-                Icons.home_outlined,
-                size: 30,
-                color: Colors.white,
-              ),
-              label: 'Home',
-              labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-            ),
-            CurvedNavigationBarItem(
-              child: Icon(
-                CupertinoIcons.cart_fill,
-                size: 30,
-                color: Colors.white,
-              ),
-              label: 'Notification',
-              labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-            ),
-            CurvedNavigationBarItem(
-              child: Icon(
-                Icons.notifications,
-                size: 30,
-                color: Colors.white,
-              ),
-              label: 'Me',
-              labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-            ),
-
-
-          ]),
     );
   }
 }

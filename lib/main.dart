@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:neww/pages/Homepage.dart';
 import 'package:neww/pages/Item.dart';
 import 'package:neww/pages/Login.dart';
+import 'package:neww/pages/MENU%20PAGE.dart';
+import 'package:neww/pages/OTP%20Verification%20code.dart';
 import 'package:neww/pages/Splashscreen.dart';
 import 'package:neww/pages/cart.dart';
+import 'package:neww/pages/forgot%20password.dart';
 import 'package:neww/pages/sign%20up%20page.dart';
 import 'package:neww/pages/welcome%20splashscreen.dart';
 
@@ -24,8 +27,11 @@ class MyApp extends StatelessWidget {
         "/": (context) => SplashScreen(),
         "loginPage": (context) => LoginPage(),
         "signUp": (context) => SignUp(),
-        "welcomesplashscreen": (context) => WelcomeSplashScreen(),
         "homePage": (context) => HomePage(),
+        "forgotPassword": (context) => ForgotPassword(),
+        "otpform": (context) => OtpForm(),
+        "menu": (context) => Menu(),
+        "welcomesplashscreen": (context) => WelcomeSplashScreen(),
         "cartPage": (context) => CartPage(),
         "itemPage": (context) => ItemPage()
       },
