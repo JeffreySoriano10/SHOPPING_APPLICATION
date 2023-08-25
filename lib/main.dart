@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:neww/pages/Homepage.dart';
 import 'package:neww/pages/Item.dart';
 import 'package:neww/pages/Login.dart';
+import 'package:neww/pages/ME%20page.dart';
 import 'package:neww/pages/MENU%20PAGE.dart';
 import 'package:neww/pages/OTP%20Verification%20code.dart';
 import 'package:neww/pages/Splashscreen.dart';
 import 'package:neww/pages/cart.dart';
 import 'package:neww/pages/forgot%20password.dart';
+import 'package:neww/pages/notification%20PAGE.dart';
 import 'package:neww/pages/sign%20up%20page.dart';
 import 'package:neww/pages/try%20lang.dart';
 import 'package:neww/pages/welcome%20splashscreen.dart';
@@ -28,7 +30,9 @@ class MyApp extends StatelessWidget {
         "/": (context) => SplashScreen(),
         "loginPage": (context) => LoginPage(),
         "trylang": (context) => trylang(),
+        "notifview": (context) => NotificationView(),
         "signUp": (context) => SignUp(),
+        "profilepic": (context) => ProfileScreen(),
         "homePage": (context) => HomePage(),
         "forgotPassword": (context) => ForgotPassword(),
         "otpform": (context) => OtpForm(),
