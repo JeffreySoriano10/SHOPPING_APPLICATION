@@ -8,6 +8,7 @@ import 'package:neww/pages/Splashscreen.dart';
 import 'package:neww/pages/cart.dart';
 import 'package:neww/pages/forgot%20password.dart';
 import 'package:neww/pages/sign%20up%20page.dart';
+import 'package:neww/pages/try%20lang.dart';
 import 'package:neww/pages/welcome%20splashscreen.dart';
 
 void main() {
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => SplashScreen(),
         "loginPage": (context) => LoginPage(),
+        "trylang": (context) => trylang(),
         "signUp": (context) => SignUp(),
         "homePage": (context) => HomePage(),
         "forgotPassword": (context) => ForgotPassword(),

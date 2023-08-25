@@ -8,152 +8,114 @@ class ForgotPassword extends StatefulWidget {
 class _ForgotPasswordState extends State<ForgotPassword> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      padding: EdgeInsets.all(25),
-      child: Scaffold(
-        body: SingleChildScrollView(
-          child: SafeArea(
-            child: Column(
-              children: [
-                InkWell(
-                  onTap: () {
-                    // goes back to previous screen/page
-                    Navigator.pop(context);
-                  },
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      backgroundColor: Color(0xfff7f6fb),
+      body: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 24, horizontal: 32),
+          child: Column(
+            children: [
+              InkWell(
+                onTap: () {
+                  // goes back to previous screen/page
+                  Navigator.pop(context);
+                },
+                child: Align(
+                  alignment: Alignment.topLeft,
                   child: Icon(
                     Icons.arrow_back,
                     size: 30,
-                    color: Color(0xFF004D40),
+                    color: Colors.black45,
                   ),
                 ),
-                SizedBox(height: 50),
-                Text(
-                  "Please enter Principal Phone number and your Registered email ",
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
-                      fontWeight: FontWeight.w500),
+              ),
+              SizedBox(height: 30),
+              Container(
+                width: 250,
+                height: 250,
+                decoration: BoxDecoration(
+                    color: Colors.green.shade50, shape: BoxShape.circle),
+                child: Image.asset(
+                  "images/LOGOS/hand.png",
+                  width: 10,
+                  height: 20,
                 ),
-                SizedBox(height: 50),
-                Container(
-                  //   margin: EdgeInsets.symmetric(horizontal: 20),
-                  padding: EdgeInsets.symmetric(horizontal: 10),
-                  height: 55,
-                  decoration: BoxDecoration(
-                    color: Color(0xFFF5F9FD),
-                    border: Border.all(
-                      color: Color(0xFF00695C),
-                    ),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.phone,
-                        size: 27,
-                        color: Color(0xFF00695C),
+              ),
+              SizedBox(height: 15),
+              Text(
+                "Send OTP Verification Code",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(height: 12),
+              Text(
+                "Add your phone number and we'll send you a verification code so we know you're real",
+                style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black26),
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: 28),
+              Container(
+                padding: EdgeInsets.all(28),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: Column(
+                  children: [
+                    TextFormField(
+                      keyboardType: TextInputType.number,
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
                       ),
-                      SizedBox(width: 10),
-                      Container(
-                        // margin: EdgeInsets.,
-                        width: 250,
-                        child: TextFormField(
-                          decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: "Phone Number",
+                      decoration: InputDecoration(
+                        enabledBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.black12),
+                            borderRadius: BorderRadius.circular(40)),
+                        focusedBorder: OutlineInputBorder(
+                            borderSide: BorderSide(color: Colors.black12),
+                            borderRadius: BorderRadius.circular(40)),
+                        suffixIcon: Icon(
+                          Icons.check_circle,
+                          color: Colors.green,
+                          size: 32,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 30),
+                    SizedBox(
+                      height: 53,
+                      width: 250,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, "otpform");
+                        },
+                        style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all(Colors.white),
+                            backgroundColor: MaterialStateProperty.all(
+                                Colors.green.shade600),
+                            shape: MaterialStateProperty.all<
+                                    RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(24)))),
+                        child: Padding(
+                          padding: EdgeInsets.all(14),
+                          child: Text(
+                            "Send",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 20),
                           ),
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-                SizedBox(height: 15),
-                Container(
-                  //   margin: EdgeInsets.symmetric(horizontal: 20),
-                  padding: EdgeInsets.symmetric(horizontal: 10),
-                  height: 55,
-                  decoration: BoxDecoration(
-                    color: Color(0xFFF5F9FD),
-                    border: Border.all(
-                      color: Color(0xFF00695C),
-                    ),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: Row(children: [
-                    Icon(
-                      Icons.email,
-                      size: 27,
-                      color: Color(0xFF00695C),
-                    ),
-                    SizedBox(width: 10),
-                    Container(
-                      // margin: EdgeInsets.,
-                      width: 250,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          border: InputBorder.none,
-                          hintText: "E-mail",
-                        ),
-                      ),
-                    ),
-                  ]),
-                ),
-                SizedBox(height: 50),
-                InkWell(
-                  onTap: () {
-                    Navigator.pushNamed(context, "otpform");
-                  },
-                  child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 50),
-                    padding: EdgeInsets.symmetric(horizontal: 15),
-                    height: 55,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: [Color(0xFF004D40), Color(0xFF009658)],
-                      ),
-                      color: Color(0xFF4C53A5),
-                      borderRadius: BorderRadius.circular(50),
-                    ),
-                    child: Text(
-                      "Next",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white,
-                          letterSpacing: 1),
-                    ),
-                  ),
-                ),
-                SizedBox(height: 50),
-                Text(
-                  "Already have an Account?",
-                  style: TextStyle(
-                    color: Colors.black87,
-                    fontWeight: FontWeight.normal,
-                    fontSize: 15,
-                  ),
-                ),
-                SizedBox(height: 30),
-                TextButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, "loginPage");
-                  },
-                  child: Text(
-                    "LOGIN",
-                    style: TextStyle(
-                      color: Color(0xFF00695C),
-                      fontWeight: FontWeight.bold,
-                      fontSize: 19,
-                    ),
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

@@ -25,7 +25,7 @@ class ItemPage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(16),
             child: Image.asset(
-              "images/1.png",
+              "images/5.png",
               height: 300,
             ),
           ),

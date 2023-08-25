@@ -20,29 +20,36 @@ class _SignUpState extends State<SignUp> {
             child: Column(
               children: [
                 InkWell(
-                  onTap: () {
-                    // goes back to previous screen/page
-                    Navigator.pop(context);
-                  },
-                  child: Icon(
-                    Icons.arrow_back,
-                    size: 30,
-                    color: Color(0xFF004D40),
-                  ),
-                ),
+                    onTap: () {
+                      // goes back to previous screen/page
+                      Navigator.pop(context);
+                    },
+                    child: Align(
+                      alignment: Alignment.topLeft,
+                      child: Icon(
+                        Icons.arrow_back,
+                        size: 30,
+                        color: Color(0xFF004D40),
+                      ),
+                    )),
                 SizedBox(height: 20),
                 Text(
                   "Create an Account Now",
-                  style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.w500
-                  ),
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500),
                 ),
                 SizedBox(height: 30),
                 CircleAvatar(
-                  backgroundImage: NetworkImage("https://cdn-icons-png.flaticon.com/512/147/147142.png"),
+                  backgroundImage: NetworkImage(
+                      "https://cdn-icons-png.flaticon.com/512/147/147142.png"),
                   radius: 70,
                 ),
                 SizedBox(height: 30),
                 Container(
+                  width: 340,
+
                   //   margin: EdgeInsets.symmetric(horizontal: 20),
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   height: 55,
@@ -52,7 +59,6 @@ class _SignUpState extends State<SignUp> {
                       color: Color(0xFF00695C),
                     ),
                     borderRadius: BorderRadius.circular(20),
-
                   ),
                   child: Row(
                     children: [
@@ -77,6 +83,8 @@ class _SignUpState extends State<SignUp> {
                 ),
                 SizedBox(height: 15),
                 Container(
+                  width: 340,
+
                   //   margin: EdgeInsets.symmetric(horizontal: 20),
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   height: 55,
@@ -86,7 +94,6 @@ class _SignUpState extends State<SignUp> {
                       color: Color(0xFF00695C),
                     ),
                     borderRadius: BorderRadius.circular(20),
-
                   ),
                   child: Row(children: [
                     Icon(
@@ -99,6 +106,7 @@ class _SignUpState extends State<SignUp> {
                       // margin: EdgeInsets.,
                       width: 250,
                       child: TextFormField(
+                        keyboardType: TextInputType.number,
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: "Phone",
@@ -109,6 +117,7 @@ class _SignUpState extends State<SignUp> {
                 ),
                 SizedBox(height: 15),
                 Container(
+                  width: 340,
                   //   margin: EdgeInsets.symmetric(horizontal: 20),
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   height: 55,
@@ -118,7 +127,6 @@ class _SignUpState extends State<SignUp> {
                       color: Color(0xFF00695C),
                     ),
                     borderRadius: BorderRadius.circular(20),
-
                   ),
                   child: Row(children: [
                     Icon(
@@ -141,16 +149,15 @@ class _SignUpState extends State<SignUp> {
                 ),
                 SizedBox(height: 15),
                 Container(
+                  width: 340,
+
                   // margin: EdgeInsets.symmetric(horizontal: 20),
                   padding: EdgeInsets.only(left: 10, right: 10),
                   height: 55,
                   decoration: BoxDecoration(
                     color: Color(0xFFF5F9FD),
-                    border: Border.all(
-                      color: Color(0xFF00695C)
-                    ),
+                    border: Border.all(color: Color(0xFF00695C)),
                     borderRadius: BorderRadius.circular(20),
-
                   ),
                   child: Row(
                     children: [
@@ -162,7 +169,7 @@ class _SignUpState extends State<SignUp> {
                       SizedBox(width: 10),
                       Container(
                         // margin: EdgeInsets.,
-                        width: 320,
+                        width: 280,
                         child: TextFormField(
                           controller: passwordController,
                           obscureText: _isHiddenPassword,
@@ -187,37 +194,63 @@ class _SignUpState extends State<SignUp> {
                     ],
                   ),
                 ),
-                SizedBox(height: 50),
-                InkWell(
-                  onTap: () {
-                    Navigator.pushNamed(context, "welcomesplashscreen");
-                  },
-                  child: Container(
-                    alignment: Alignment.center,
-                    margin: EdgeInsets.symmetric(horizontal: 50),
-                    padding: EdgeInsets.symmetric(horizontal: 15),
-                    height: 55,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: [Color(0xFF004D40), Color(0xFF009658)],
+                SizedBox(
+                  height: 30,
+                ),
+                SizedBox(
+                  height: 50,
+                  width: 250,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, "welcomesplashscreen");
+                    },
+                    style: ButtonStyle(
+                        foregroundColor:
+                            MaterialStateProperty.all(Colors.white),
+                        backgroundColor:
+                            MaterialStateProperty.all(Color(0xFF00695C)),
+                        shape:
+                            MaterialStateProperty.all<RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(24)))),
+                    child: Padding(
+                      padding: EdgeInsets.all(14),
+                      child: Text(
+                        "Create Account",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20),
                       ),
-                      color: Color(0xFF4C53A5),
-                      borderRadius: BorderRadius.circular(50),
-
-                    ),
-                    child: Text(
-                      "Create Account",
-                      style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.white,
-                          letterSpacing: 1),
                     ),
                   ),
                 ),
+                SizedBox(height: 5),
+                SizedBox(
+                  height: 50,
+                  width: 250,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, "loginPage");
+                    },
+                    style: ButtonStyle(
+                        foregroundColor:
+                        MaterialStateProperty.all(Color(0xFF00695C)),
+                        backgroundColor:
+                        MaterialStateProperty.all(Colors.white),
+                        shape:
+                        MaterialStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(24)))),
+                    child: Padding(
+                      padding: EdgeInsets.all(14),
+                      child: Text(
+                        "Login",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20),
+                      ),
+                    ),
+                  ),
+                ),
+
                 SizedBox(height: 50),
                 Text(
                   "Already have an Account?",
@@ -227,20 +260,7 @@ class _SignUpState extends State<SignUp> {
                     fontSize: 15,
                   ),
                 ),
-                SizedBox(height: 30),
-                TextButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, "loginPage");
-                  },
-                  child: Text(
-                    "LOGIN",
-                    style: TextStyle(
-                      color: Color(0xFF00695C),
-                      fontWeight: FontWeight.bold,
-                      fontSize: 19,
-                    ),
-                  ),
-                ),
+
               ],
             ),
           ),

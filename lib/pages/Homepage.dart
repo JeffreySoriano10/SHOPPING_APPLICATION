@@ -91,42 +91,23 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: CurvedNavigationBar(
-          backgroundColor: Colors.transparent,
-          onTap: (index) {},
-          height: 70,
-          color: Color(0xFF137865),
-          items: [
-            CurvedNavigationBarItem(
-              child: Icon(
-                Icons.home_outlined,
-                size: 30,
-                color: Colors.white,
-              ),
-              label: 'Home',
-              labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-            ),
-            CurvedNavigationBarItem(
-              child: Icon(
-                CupertinoIcons.cart_fill,
-                size: 30,
-                color: Colors.white,
-              ),
-              label: 'Notification',
-              labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-            ),
-            CurvedNavigationBarItem(
-              child: Icon(
-                Icons.notifications,
-                size: 30,
-                color: Colors.white,
-              ),
-              label: 'Me',
-              labelStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-            ),
+      bottomNavigationBar: NavigationBarTheme(
+        data: NavigationBarThemeData(
+          indicatorColor: Colors.green.shade100,
+          labelTextStyle: MaterialStatePropertyAll(
+            TextStyle(fontWeight: FontWeight.w700, fontSize: 14),
+          ),
+        ),
+        child: NavigationBar(
+          destinations: [
+            NavigationDestination(icon: Icon(Icons.home), label: "Home"),
+            NavigationDestination(
+                icon: Icon(Icons.notifications), label: "Notifications"),
+            NavigationDestination(icon: Icon(Icons.person), label: "Me"),
+          ],
+        ),
+      ),
 
-
-          ]),
     );
   }
 }

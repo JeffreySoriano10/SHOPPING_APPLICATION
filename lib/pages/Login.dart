@@ -100,7 +100,7 @@ class _LoginPageState extends State<LoginPage> {
                           SizedBox(width: 10),
                           Container(
                             // margin: EdgeInsets.,
-                            width: 320,
+                            width: 300,
                             child: TextFormField(
                               controller: passwordController,
                               obscureText: _isHiddenPassword,
