@@ -141,39 +141,29 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     SizedBox(height: 30),
-                    InkWell(
-                      onTap: () {
-                        Navigator.pushNamed(context, "homePage");
-                      },
-                      child: Container(
-                        alignment: Alignment.center,
-                        margin: EdgeInsets.symmetric(horizontal: 50),
-                        padding: EdgeInsets.symmetric(horizontal: 15),
-                        height: 55,
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            colors: [Color(0xFF004D40), Color(0xFF009658)],
+                    SizedBox(
+                      height: 53,
+                      width: 250,
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, "homePage");
+                        },
+                        style: ButtonStyle(
+                            foregroundColor:
+                            MaterialStateProperty.all(Colors.white),
+                            backgroundColor: MaterialStateProperty.all(
+                                Color(0xFF00695C)),
+                            shape: MaterialStateProperty.all<
+                                RoundedRectangleBorder>(
+                                RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(24)))),
+                        child: Padding(
+                          padding: EdgeInsets.all(14),
+                          child: Text(
+                            "Login",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 20),
                           ),
-                          color: Color(0xFF4C53A5),
-                          borderRadius: BorderRadius.circular(50),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Color(0xFF4C53A5).withOpacity(1),
-                              blurRadius: 5,
-                              spreadRadius: 1,
-                            ),
-                          ],
-                        ),
-                        child: Text(
-                          "Log In",
-                          style: TextStyle(
-                              fontSize: 22,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white,
-                              letterSpacing: 1),
                         ),
                       ),
                     ),

@@ -44,8 +44,8 @@ class _ForgotPasswordState extends State<ForgotPassword> {
               ),
               SizedBox(height: 15),
               Text(
-                "Send OTP Verification Code",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                "Input your Mobile Number",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color(0xFF00695C)),
               ),
               SizedBox(height: 12),
               Text(

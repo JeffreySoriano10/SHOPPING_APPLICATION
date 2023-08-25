@@ -45,7 +45,7 @@ class _OtpFormState extends State<OtpForm> {
               SizedBox(height: 18),
               Text(
                 "Verification",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color(0xFF00695C)),
               ),
               SizedBox(height: 12),
               Text(
