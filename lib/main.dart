@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:neww/pages/ABOUT%20US.dart';
+import 'package:neww/pages/COMMUNITY%20RULES.dart';
+import 'package:neww/pages/CONTACT%20US.dart';
 import 'package:neww/pages/Homepage.dart';
 import 'package:neww/pages/Item.dart';
 import 'package:neww/pages/Login.dart';
+import 'package:neww/pages/MAIN%20NG%20HOMEAPPBAR.dart';
 import 'package:neww/pages/ME%20page.dart';
 import 'package:neww/pages/MENU%20PAGE.dart';
 import 'package:neww/pages/OTP%20Verification%20code.dart';
@@ -29,6 +33,9 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => SplashScreen(),
         "loginPage": (context) => LoginPage(),
+        "aboutus": (context) => AboutUs(),
+        "comrules": (context) => ComRules(),
+        "contactus": (context) => ContactUs(),
         "trylang": (context) => trylang(),
         "notifview": (context) => NotificationView(),
         "signUp": (context) => SignUp(),
@@ -39,6 +46,7 @@ class MyApp extends StatelessWidget {
         "menu": (context) => Menu(),
         "welcomesplashscreen": (context) => WelcomeSplashScreen(),
         "cartPage": (context) => CartPage(),
+        "homeappbar": (context) => homeappbar(),
         "itemPage": (context) => ItemPage()
       },
     );

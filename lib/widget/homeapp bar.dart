@@ -15,18 +15,6 @@ class HomeAppBar extends StatelessWidget {
       padding: EdgeInsets.all(25),
       child: Row(
         children: [
-          InkWell(
-            onTap: () {
-              // goes back to previous screen/page
-              Navigator.pushNamed(context, "menu");
-            },
-            child: Icon(
-              Icons.sort,
-              size: 30,
-              color: Color(0xFF004D40),
-            ),
-          ),
-
           Padding(
             padding: EdgeInsets.only(
               left: 20,

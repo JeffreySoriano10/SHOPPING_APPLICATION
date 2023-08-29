@@ -13,7 +13,8 @@ class NotificationView extends StatelessWidget {
 
   PreferredSizeWidget appBar (){
     return AppBar(
-      title:  Text("Notification"),
+      backgroundColor: Color(0xFF006951),
+      title:  Text("Notifications"),
     );
   }
 
