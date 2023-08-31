@@ -38,14 +38,14 @@ class drawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.policy, color: Color(0xFF004D40)),
             title: Text('konek2CART Policies', style: TextStyle(color: Color(0xFF004D40))),
-            onTap: () => null,
+            onTap: () {Navigator.pushNamed(context, "policies");},
           ),
-          ListTile(
-            leading: Icon(Icons.star_rate, color: Color(0xFF004D40)),
-            title: Text('Rate Us!', style: TextStyle(color: Color(0xFF004D40))),
-            onTap: () => null,
-          ),
-          Divider(),
+          // ListTile(
+          //   leading: Icon(Icons.star_rate, color: Color(0xFF004D40)),
+          //   title: Text('Rate Us!', style: TextStyle(color: Color(0xFF004D40))),
+          //   onTap: () => null,
+          // ),
+          // Divider(),
           ListTile(
             leading: Icon(Icons.abc_outlined, color: Color(0xFF004D40),),
             title: Text('About Us', style: TextStyle(color: Color(0xFF004D40))),
@@ -59,13 +59,14 @@ class drawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.question_answer, color: Color(0xFF004D40)),
             title:
-                Text('FAQ', style: TextStyle(color: Color(0xFF004D40))),
-            onTap: () => null,
+                Text('FAQs', style: TextStyle(color: Color(0xFF004D40))),
+            onTap: () {Navigator.pushNamed(context, "faq");},
           ),
           ListTile(
             leading: Icon(Icons.delete_forever, color: Color(0xFF004D40)),
             title: Text('Request Account Deletion', style: TextStyle(color: Color(0xFF004D40))),
-            onTap: () => null,
+            onTap: () {Navigator.pushNamed(context, "requestacctdelete");},
+
           ),
 
         ],

@@ -26,7 +26,7 @@ class NotificationView extends StatelessWidget {
         separatorBuilder: (context, index) {
           return Divider(height: 0,);
         },
-        itemCount: 15);
+        itemCount: 6);
   }
 
   Widget listViewItem(int index) {
@@ -76,18 +76,14 @@ class NotificationView extends StatelessWidget {
         maxLines: 3,
         overflow: TextOverflow.ellipsis,
         text: TextSpan(
-            text: "Message",
+            text: "likha_inay24",
             style: TextStyle(
                 fontSize: textSize,
                 color: Colors.black,
                 fontWeight: FontWeight.bold
             ),
             children: [
-              TextSpan(
-                text: "Message Description",
-                style: TextStyle (fontWeight: FontWeight.w400,
-                ),
-              )
+
             ]
         ),
       ),

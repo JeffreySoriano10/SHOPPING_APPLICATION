@@ -33,10 +33,10 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 20,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
-                "konek2CART aims to create a welcoming community by creating Community Rules for consumers and sellers. These guidelines ensure a safe environment for shopping and selling on-the-go. By using konek2CART, users agree to its Terms of Service and are committed to maintaining a safe neighborhood.",
+                '''konek2CART aims to create a welcoming community by creating Community Rules for consumers and sellers. These guidelines ensure a safe environment for shopping and selling on-the-go. By using konek2CART, users agree to its Terms of Service and are committed to maintaining a safe neighborhood.''',
                 style: TextStyle(
                   fontSize: 15,
                   color: Color(0xFF004D40),
@@ -68,7 +68,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 7,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "1. Sell, not Advertise",
@@ -83,7 +83,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 12,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "konek2CART is intended to facilitate transactions between buyers and sellers, not to serve as an advertisement platform. You should only list things on Shopee that you intend to sell.",
@@ -96,7 +96,7 @@ class ComRules extends StatelessWidget {
             Container(
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "Here are some advertising examples:",
@@ -109,8 +109,8 @@ class ComRules extends StatelessWidget {
             Container(
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
-                vertical: 5,
-                horizontal: 10,
+                vertical: 7,
+                horizontal: 20,
               ),
               child: Text(
                 "Including a link to a different website on your product page.",
@@ -124,7 +124,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 7,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "2. How to make youre products shine",
@@ -139,7 +139,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 12,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "Ensure your listing has high-quality images and is truthful in product descriptions to attract buyers and increase the chances of receiving positive ratings and reviews.",
@@ -153,7 +153,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 7,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "3. Be Respectful",
@@ -168,7 +168,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 12,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "Shopee aims to create a secure mobile purchasing environment, promoting clean content, respect, and compassion among users. Following these guidelines ensures seamless transactions for all.",
@@ -203,7 +203,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 7,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "1. Infringing content and impersonation",
@@ -218,7 +218,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 12,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "In konek2CART, any fraudulent imitation is a punishable offense. Respect the rights of others and provide credit where credit is due if you use someone else's photo.",
@@ -245,7 +245,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 10,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "Collecting and using others’ personal data without their consent (i.e. contact details, photos…). Using someone’s identity as your own for credibility purposes.",
@@ -259,7 +259,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 7,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "2. Counterfeit and imitation products",
@@ -274,7 +274,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 12,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "On konek2CART, only authentic products may be listed. Please be informed that in Singapore, counterfeit goods are unlawful and strictly forbidden. Shopee retains the right to flag and remove any listing that appears to be a fake.",
@@ -288,7 +288,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 7,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "3. Posting services",
@@ -303,7 +303,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 12,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "konek2CART does not allow users to list their services on the platform",
@@ -317,7 +317,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 7,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "4. Return Policy",
@@ -332,7 +332,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 12,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "Sellers are allowed to set their own return policy as long as it does not contradict with the existing version set by the konek2CART",
@@ -356,7 +356,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 12,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "konek2CART is a public platform for on-the-go purchasing and selling, requiring respect and respect among users. Reporting violations is encouraged, but it doesn't guarantee removal; konek2CART's decision is final. Everyone plays a role in ensuring community safety.",
@@ -370,7 +370,7 @@ class ComRules extends StatelessWidget {
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.symmetric(
                 vertical: 12,
-                horizontal: 10,
+                horizontal: 20,
               ),
               child: Text(
                 "We value your opinions greatly and would be delighted to hear from you. If you have any questions or comments about how we can create the greatest possible mobile shopping experience, please contact us here.",
