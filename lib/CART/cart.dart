@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:neww/widget/cartappbar.dart';
+import 'package:neww/CART/cartappbar.dart';
+import 'package:neww/CART/cartitem%20samples.dart';
 
-import '../widget/cart total bottom.dart';
-import '../widget/cartitem samples.dart';
+import 'cart total bottom.dart';
 
 class CartPage extends StatelessWidget {
   // This widget is the root of your application.

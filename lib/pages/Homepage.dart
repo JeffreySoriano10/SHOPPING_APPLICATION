@@ -2,11 +2,11 @@ import 'package:curved_labeled_navigation_bar/curved_navigation_bar.dart';
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:neww/pages/ME%20page.dart';
-import 'package:neww/pages/drawer.dart';
-import 'package:neww/pages/notification%20PAGE.dart';
-import 'package:neww/widget/categories%20widget.dart';
-import 'package:neww/widget/best selling.dart';
+import 'package:neww/categories/categories%20widget.dart';
+import 'package:neww/PROFILE/ME%20page.dart';
+import 'package:neww/menu/drawer.dart';
+import 'package:neww/bottomNAVbar/notification%20PAGE.dart';
+import 'package:neww/BEST%20SELLING%20CLICK/best%20selling.dart';
 
 import '../widget/homeapp bar.dart';
 

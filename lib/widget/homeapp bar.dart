@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:neww/pages/cart.dart';
+import 'package:neww/CART/cart.dart';
 
 class HomeAppBar extends StatelessWidget {
   @override
@@ -12,7 +12,7 @@ class HomeAppBar extends StatelessWidget {
       //
       // ),
       color: Colors.white,
-      padding: EdgeInsets.all(25),
+      padding: EdgeInsets.all(10),
       child: Row(
         children: [
           Padding(
@@ -20,9 +20,8 @@ class HomeAppBar extends StatelessWidget {
               left: 20,
             ),
             child: Container(
-              margin: EdgeInsets.all(5),
               child: Image.asset("images/konekk.png"),
-              height: 55,
+              height: 50,
             ),
           ),
           Spacer(),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:neww/pages/Homepage.dart';
-import 'package:neww/pages/ME%20page.dart';
-import 'package:neww/pages/notification%20PAGE.dart';
+import 'package:neww/PROFILE/ME%20page.dart';
+import 'package:neww/bottomNAVbar/notification%20PAGE.dart';
 
 class homeappbar extends StatefulWidget {
   const homeappbar({Key? key}) : super(key: key);

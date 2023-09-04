@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:neww/widget/best%20selling.dart';
-import 'package:neww/widget/categories%20widget.dart';
+import 'package:neww/categories/categories%20widget.dart';
+import 'package:neww/BEST%20SELLING%20CLICK/best%20selling.dart';
 import 'package:neww/widget/homeapp%20bar.dart';
 
 class HomePagee extends StatelessWidget {

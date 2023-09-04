@@ -122,6 +122,12 @@ class _LoginPageState extends State<LoginPage> {
                                 ),
                               ),
                             ),
+                            validator: (value) {
+                              if (value!.isEmpty) {
+                                return 'Please enter your password';
+                              }
+                              return null;
+                            },
                           ),
                         ),
                       ],

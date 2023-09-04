@@ -11,7 +11,7 @@ class ItemsWidget extends StatelessWidget {
       crossAxisCount: 2,
       shrinkWrap: true,
       children: [
-        for (int i = 1; i < 8; i++)
+        for (int i = 1; i < 14; i++)
           Container(
             padding: EdgeInsets.only(left: 15, right: 15, top: 10),
             margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
@@ -36,10 +36,10 @@ class ItemsWidget extends StatelessWidget {
                             fontWeight: FontWeight.bold),
                       ),
                     ),
-                    Icon(
-                      Icons.favorite_border,
-                      color: Colors.red,
-                    ),
+                    // Icon(
+                    //   Icons.favorite_border,
+                    //   color: Colors.red,
+                    // ),
                   ],
                 ),
                 InkWell(
@@ -81,10 +81,16 @@ class ItemsWidget extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 21, fontWeight: FontWeight.bold,color: Color(0xFF004D40)),
                       ),
-                      Icon(
-                        Icons.shopping_cart_checkout,
-                        color: Color(0xFF004D40),
-                      )
+                      InkWell(
+                        onTap: () {
+                          Navigator.pushNamed(context, "cartPage");
+                        },
+                        child: Icon(
+                          Icons.shopping_cart_checkout,
+                          color: Color(0xFF004D40),
+                        ),
+                      ),
+
                     ],
                   ),
                 )

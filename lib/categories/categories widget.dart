@@ -20,7 +20,7 @@ class CategoriesWidget extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, "likhapage");
+                    Navigator.pushNamed(context, "likhaniInay");
                   },
                   child: Align(
                     alignment: Alignment.topLeft,

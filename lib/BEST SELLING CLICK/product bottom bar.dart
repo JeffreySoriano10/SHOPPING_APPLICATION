@@ -36,7 +36,27 @@ class ItemBottomNavBar extends StatelessWidget {
               icon: Icon(CupertinoIcons.cart_badge_plus),
               label: Text(
                 "Add To Cart",
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+              ),
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(
+                    Color(0xFF009658),
+                  ),
+                  padding: MaterialStateProperty.all(
+                    EdgeInsets.symmetric(vertical: 13, horizontal: 15),
+                  ),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20)),
+                  )
+              ),
+            ),
+            ElevatedButton.icon(
+              onPressed: () {},
+              icon: Icon(CupertinoIcons.selection_pin_in_out),
+              label: Text(
+                "Buy Now",
+                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
               ),
               style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(

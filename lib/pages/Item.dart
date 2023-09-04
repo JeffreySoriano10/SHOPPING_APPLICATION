@@ -2,12 +2,10 @@ import 'package:clippy_flutter/arc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:neww/widget/itemappbar.dart';
-
-import '../widget/product bottom bar.dart';
+import 'package:neww/BEST%20SELLING%20CLICK/itemappbar.dart';
+import 'package:neww/BEST%20SELLING%20CLICK/product%20bottom%20bar.dart';
 
 class ItemPage extends StatelessWidget {
-
   // List<Color> Clrs = [
   //   Colors.red,
   //   Colors.green,
@@ -25,7 +23,7 @@ class ItemPage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.all(16),
             child: Image.asset(
-              "images/5.png",
+              "images/1.png",
               height: 300,
             ),
           ),
@@ -127,6 +125,7 @@ class ItemPage extends StatelessWidget {
                         ],
                       ),
                     ),
+                    SizedBox(height: 10,),
                     Padding(
                       padding: EdgeInsets.symmetric(vertical: 12),
                       child: Text(
@@ -142,45 +141,45 @@ class ItemPage extends StatelessWidget {
                       padding: EdgeInsets.symmetric(vertical: 8),
                       child: Row(
                         children: [
-                          Text(
-                            "Size",
-                            style: TextStyle(
-                              fontSize: 18,
-                              color: Color(0xFF004D40),
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
+                          // Text(
+                          //   "Size",
+                          //   style: TextStyle(
+                          //     fontSize: 18,
+                          //     color: Color(0xFF004D40),
+                          //     fontWeight: FontWeight.bold,
+                          //   ),
+                          // ),
                           SizedBox(
                             width: 10,
                           ),
-                          Row(
-                            children: [
-                              for (int i = 5; i < 10; i++)
-                                Container(
-                                  height: 30,
-                                  width: 30,
-                                  alignment: Alignment.center,
-                                  margin: EdgeInsets.symmetric(horizontal: 5),
-                                  decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(30),
-                                      boxShadow: [
-                                        BoxShadow(
-                                            color: Colors.grey.withOpacity(0.5),
-                                            spreadRadius: 2,
-                                            blurRadius: 8),
-                                      ]),
-                                  child: Text(
-                                    i.toString(),
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                      color: Color(0xFF004D40),
-                                    ),
-                                  ),
-                                ),
-                            ],
-                          ),
+                          // Row(
+                          //   children: [
+                          //     for (int i = 5; i < 10; i++)
+                          //       Container(
+                          //         height: 30,
+                          //         width: 30,
+                          //         alignment: Alignment.center,
+                          //         margin: EdgeInsets.symmetric(horizontal: 5),
+                          //         decoration: BoxDecoration(
+                          //             color: Colors.white,
+                          //             borderRadius: BorderRadius.circular(30),
+                          //             boxShadow: [
+                          //               BoxShadow(
+                          //                   color: Colors.grey.withOpacity(0.5),
+                          //                   spreadRadius: 2,
+                          //                   blurRadius: 8),
+                          //             ]),
+                          //         child: Text(
+                          //           i.toString(),
+                          //           style: TextStyle(
+                          //             fontSize: 18,
+                          //             fontWeight: FontWeight.bold,
+                          //             color: Color(0xFF004D40),
+                          //           ),
+                          //         ),
+                          //       ),
+                          //   ],
+                          // ),
                         ],
                       ),
                     ),
@@ -188,14 +187,14 @@ class ItemPage extends StatelessWidget {
                       padding: EdgeInsets.symmetric(vertical: 8),
                       child: Row(
                         children: [
-                          Text(
-                            "Color",
-                            style: TextStyle(
-                              fontSize: 18,
-                              color: Color(0xFF004D40),
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
+                          // Text(
+                          //   "Color",
+                          //   style: TextStyle(
+                          //     fontSize: 18,
+                          //     color: Color(0xFF004D40),
+                          //     fontWeight: FontWeight.bold,
+                          //   ),
+                          // ),
                           SizedBox(
                             width: 10,
                           ),

@@ -42,18 +42,13 @@ class ProfileScreen extends StatelessWidget {
             const SizedBox(height: 20),
             itemProfile('Name', 'Jezrael', CupertinoIcons.person),
             itemProfile('My Wallet', 'Vouchers', CupertinoIcons.person),
-            itemProfile('My Purchase', 'To Pay, To Ship, To Receive',
-                CupertinoIcons.person),
-            itemProfile(
-                'Account Settings', 'Help Center', CupertinoIcons.person),
+            itemProfile('My Purchase', 'To Pay, To Ship, To Receive', CupertinoIcons.person),
+            itemProfile('Account Settings', 'Help Center', CupertinoIcons.person),
             itemProfile('Logout', 'Switch Account', CupertinoIcons.person),
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, "loginPage");
-                  },
-                  style: ElevatedButton.styleFrom(
+              child: ElevatedButton(onPressed: () {},
+                  style:ElevatedButton.styleFrom(
                     padding: const EdgeInsets.all(20),
                   ),
                   child: const Text('Logout')),
@@ -64,19 +59,20 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 
+
   itemProfile(String title, String subtitle, IconData iconData) {
     return Container(
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10),
-          boxShadow: [
-            BoxShadow(
-              offset: Offset(0, 5),
-              color: Colors.green.withOpacity(.2),
-              spreadRadius: 2,
-              blurRadius: 10,
-            )
-          ]),
+          boxShadow: [BoxShadow(
+            offset: Offset(0, 5),
+            color: Colors.green.withOpacity(.2),
+            spreadRadius: 2,
+            blurRadius: 10,
+          )
+          ]
+      ),
       child: ListTile(
         title: Text(title),
         subtitle: Text(subtitle),
@@ -87,3 +83,4 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+
