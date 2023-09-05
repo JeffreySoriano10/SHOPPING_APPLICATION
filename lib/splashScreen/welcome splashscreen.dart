@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:neww/pages/Homepage.dart';
-import 'package:neww/pages/Login.dart';
 
 class WelcomeSplashScreen extends StatefulWidget {
 

@@ -27,7 +27,7 @@ class HomeAppBar extends StatelessWidget {
           Spacer(),
           Badge(
             backgroundColor: Colors.red,
-            padding: EdgeInsets.all(7),
+            padding: EdgeInsets.all(3),
             label: Text(
               "3",
               style: TextStyle(
@@ -36,7 +36,7 @@ class HomeAppBar extends StatelessWidget {
             ),
             child: InkWell(
               onTap: () {
-                Navigator.pushNamed(context, "cartPage");
+                Navigator.pushNamed(context, "checkout");
               },
               child: Icon(
                 Icons.shopping_bag_outlined,

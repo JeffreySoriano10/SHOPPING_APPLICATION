@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:neww/TRY/checkout.dart';
+import 'package:neww/TRY/payment.dart';
 import 'package:neww/bottomNAVbar/MAIN%20NG%20HOMEAPPBAR.dart';
+import 'package:neww/bottomNAVbar/ME/EDIT%20PROFILE.dart';
+import 'package:neww/bottomNAVbar/NOTIF/NEW%20NOTIF.dart';
 import 'package:neww/categories/LIKHA/likha%20products.dart';
 import 'package:neww/menu/ABOUT%20US.dart';
 import 'package:neww/menu/ACCT%20DELETE%20VERIFICATION.dart';
@@ -11,12 +15,12 @@ import 'package:neww/menu/REQUEST%20ACCT%20DELETE.dart';
 import 'package:neww/categories/LIKHA/CATEGORIES%20LIKHA.dart';
 import 'package:neww/pages/Homepage.dart';
 import 'package:neww/pages/Item.dart';
-import 'package:neww/pages/Login.dart';
+import 'package:neww/pages/LogInnn.dart';
 import 'package:neww/PROFILE/ME%20page.dart';
 import 'package:neww/pages/OTP%20Verification%20code.dart';
 import 'package:neww/CART/cart.dart';
 import 'package:neww/pages/forgot%20password.dart';
-import 'package:neww/bottomNAVbar/notification%20PAGE.dart';
+import 'package:neww/bottomNAVbar/NOTIF/notification%20PAGE.dart';
 import 'package:neww/pages/sign%20up%20page.dart';
 import 'package:neww/splashScreen/Splashscreen.dart';
 import 'package:neww/splashScreen/welcome%20splashscreen.dart';
@@ -37,7 +41,11 @@ class MyApp extends StatelessWidget {
         ),
         routes: {
           "/": (context) => SplashScreen(),
-          "loginPage": (context) => LoginPage(),
+          "loginn": (context) => Loginn(),
+          "newnotif": (context) => newnotif(),
+          "editprofile": (context) => editprofile(),
+          "checkout": (context) => checkout(),
+          "payment": (context) => payment(),
           "likhaniInay": (context) => LikhaNiInay(),
           "likhaProducts": (context) => likhaProducts(),
           "deleteacctverification": (context) => DeleteAcctVerification(),

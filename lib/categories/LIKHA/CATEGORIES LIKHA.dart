@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:neww/categories/categories%20widget.dart';
 import 'package:neww/PROFILE/ME%20page.dart';
 import 'package:neww/menu/drawer.dart';
-import 'package:neww/bottomNAVbar/notification%20PAGE.dart';
+import 'package:neww/bottomNAVbar/NOTIF/notification%20PAGE.dart';
 import 'package:neww/BEST%20SELLING%20CLICK/best%20selling.dart';
 
 import '../../widget/homeapp bar.dart';
@@ -83,38 +83,54 @@ class _HomePage extends State<LikhaNiInay> {
 
                 Container(
                   child: Row(
-                    children: <Widget>[
-                      Expanded(
-                        child: Align(
-                          alignment: Alignment.centerLeft,
-                          child: CircleAvatar(
-                            radius: 40,
-                            child: ClipOval(
-                              child: Image.asset(
-                                'images/LOGOS/1.png',
-                                fit: BoxFit.cover,
-                                width: 120,
-                                height: 120,
-                              ),
-                            ),
-                          ),
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+// group260shy (1:68)
+                        margin: EdgeInsets.fromLTRB(0, 0, 15, 0),
+                        width: 75,
+                        height: 100,
+                        child: Image.asset(
+                          'images/LOGOS/1.png',
+                          width: 46,
+                          height: 46,
                         ),
                       ),
-
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisSize: MainAxisSize.min,
-                        children: <Widget>[Align(alignment: Alignment.centerRight,),
-                          Text('Likha ni Inay',
-                              style: TextStyle(
+                      Container(
+// autogroupv4skbP5 (8Ate6z7Bq4bGk9Buyvv4SK)
+                        child: Column(
+                          crossAxisAlignment:
+                          CrossAxisAlignment.start,
+                          children: [
+                            Container(
+// passwordresetkFy (1:66)
+                              margin: EdgeInsets.fromLTRB(
+                                  0, 25, 0, 12),
+                              width: 200,
+                              height: 20,
+                              child: Text(
+                                'Likha ni Inay',
+                                style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
-                                  color: Color(0xFF004D40)),
-                              textAlign: TextAlign.center),
-                          Text('Craft beautiful UIs',textAlign: TextAlign.center),
-
-                        ],
-                      )
+                                  height: 1,
+                                  color: Color(0xFF004D40),
+                                ),
+                              ),
+                            ),
+                            Text(
+// yourpasswordhasbeenrestoredsuc (1:67)
+                              'A beautiful Store',
+                              style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
+                                height: 1.2125,
+                                color: Color(0xff7f7f7f),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                   width: 380,

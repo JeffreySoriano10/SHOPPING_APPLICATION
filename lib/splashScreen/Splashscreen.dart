@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:neww/TRY/payment.dart';
 import 'package:neww/pages/Homepage.dart';
-import 'package:neww/pages/Login.dart';
+import 'package:neww/pages/LogInnn.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key});
@@ -19,7 +20,7 @@ class _SplashScreen extends State<SplashScreen>
     Future.delayed(Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (_SplashScreen) => LoginPage(),
+          builder: (_SplashScreen) => Loginn(),
         ),
       );
     });

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:neww/bottomNAVbar/ME/ME%20one.dart';
+import 'package:neww/bottomNAVbar/NOTIF/NEW%20NOTIF.dart';
 import 'package:neww/pages/Homepage.dart';
 import 'package:neww/PROFILE/ME%20page.dart';
-import 'package:neww/bottomNAVbar/notification%20PAGE.dart';
+import 'package:neww/bottomNAVbar/NOTIF/notification%20PAGE.dart';
 
 class homeappbar extends StatefulWidget {
   const homeappbar({Key? key}) : super(key: key);
@@ -14,8 +16,8 @@ class _homeappbarState extends State<homeappbar> {
   int currentIndex = 0;
   final screens = [
     HomePage(),
-    NotificationView(),
-    ProfileScreen(),
+    newnotif(),
+    meone(),
   ];
 
   @override
