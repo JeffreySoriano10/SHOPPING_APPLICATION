@@ -84,7 +84,7 @@ class _DeleteAcctVerificationState extends State<DeleteAcctVerification> {
                         style: ButtonStyle(
                             foregroundColor: MaterialStateProperty.all(Colors.white),
                             backgroundColor:
-                            MaterialStateProperty.all(Colors.green.shade600),
+                            MaterialStateProperty.all(Color(0xFF00695C)),
                             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                                 RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(24)))),
@@ -125,7 +125,7 @@ class _DeleteAcctVerificationState extends State<DeleteAcctVerification> {
                 child: Text(
                   "Resend New Code",
                   style: TextStyle(
-                    color: Colors.green.shade600,
+                    color: Color(0xFF00695C),
                     fontWeight: FontWeight.w500,
                     fontSize: 19,
                   ),
@@ -164,7 +164,7 @@ class _DeleteAcctVerificationState extends State<DeleteAcctVerification> {
                 borderSide: BorderSide(width: 2, color: Colors.black12),
                 borderRadius: BorderRadius.circular(12)),
             focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(width: 2, color: Colors.purple),
+                borderSide: BorderSide(width: 2, color: Colors.green.shade800),
                 borderRadius: BorderRadius.circular(12)),
           ),
         ),

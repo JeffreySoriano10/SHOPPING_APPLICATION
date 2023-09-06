@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:neww/CART/cartitem%20samples.dart';
 import 'package:neww/TRY/checkout.dart';
+import 'package:neww/TRY/cod.dart';
 import 'package:neww/TRY/payment.dart';
 import 'package:neww/bottomNAVbar/MAIN%20NG%20HOMEAPPBAR.dart';
-import 'package:neww/bottomNAVbar/ME/EDIT%20PROFILE.dart';
+import 'package:neww/bottomNAVbar/ME/Edit%20%20profile%20page/EDIT%20PROFILE.dart';
 import 'package:neww/bottomNAVbar/NOTIF/NEW%20NOTIF.dart';
 import 'package:neww/categories/LIKHA/likha%20products.dart';
 import 'package:neww/menu/ABOUT%20US.dart';
@@ -42,6 +44,8 @@ class MyApp extends StatelessWidget {
         routes: {
           "/": (context) => SplashScreen(),
           "loginn": (context) => Loginn(),
+          "cod": (context) => cod(),
+          "CartItemSamples": (context) => CartItemSamples(),
           "newnotif": (context) => newnotif(),
           "editprofile": (context) => editprofile(),
           "checkout": (context) => checkout(),

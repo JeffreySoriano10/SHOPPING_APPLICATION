@@ -6,6 +6,10 @@ class editprofile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Your profile'),
+        backgroundColor: Color(0xff407545),
+      ),
       body: SingleChildScrollView(
         child: Container(
 // profileeditwYK (2:707)
@@ -31,14 +35,13 @@ class editprofile extends StatelessWidget {
                           width: 420,
                           height: 188,
                           child: Container(
-                              decoration: BoxDecoration(
-                                color: Color(0xff77a67c),
-                              ),
+                            decoration: BoxDecoration(
+                              color: Color(0xff77a67c),
+                            ),
                           ),
                         ),
                       ),
                     ),
-
                     Positioned(
 // unsplashjmurdhtm7ngwq9 (2:710)
                       left: 135,
@@ -71,20 +74,17 @@ class editprofile extends StatelessWidget {
                   Navigator.pushNamed(context, "");
                 },
                 style: ButtonStyle(
-                    foregroundColor: MaterialStateProperty.all(Colors
-                        .white),
+                    foregroundColor: MaterialStateProperty.all(Colors.white),
                     backgroundColor:
-                    MaterialStateProperty.all(Color(0xFF00695C)),
-                    shape: MaterialStateProperty.all<
-                        RoundedRectangleBorder>(
+                        MaterialStateProperty.all(Color(0xFF00695C)),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(24)))),
                 child: Padding(
                   padding: EdgeInsets.all(0),
                   child: Text(
                     "Change Picture",
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 15),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                   ),
                 ),
               ),
@@ -266,12 +266,12 @@ class editprofile extends StatelessWidget {
                           Navigator.pushNamed(context, "");
                         },
                         style: ButtonStyle(
-                            foregroundColor: MaterialStateProperty.all(Colors
-                                .white),
+                            foregroundColor:
+                                MaterialStateProperty.all(Colors.white),
                             backgroundColor:
-                            MaterialStateProperty.all(Color(0xFF00695C)),
+                                MaterialStateProperty.all(Color(0xFF00695C)),
                             shape: MaterialStateProperty.all<
-                                RoundedRectangleBorder>(
+                                    RoundedRectangleBorder>(
                                 RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(24)))),
                         child: Padding(

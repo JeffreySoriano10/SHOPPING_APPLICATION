@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class meone extends StatelessWidget {
@@ -105,23 +106,34 @@ class meone extends StatelessWidget {
                 ),
               ),
               Container(
-// autogrouppb1q3QK (WFB2gnT9By2uxCQkCUpB1q)
-                padding: EdgeInsets.fromLTRB(26, 7, 16, 15),
+// autogroupobg3SMu (WFB2zXSadi5KL8kjqNoBg3)
+                padding: EdgeInsets.fromLTRB(26, 8, 16, 21),
                 width: double.infinity,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-// autogroupzkdmZtT (WFB16fRyLSbujavuAgzkdM)
+// autogrouprqbry6w (WFB1f9Vr1QY98bb9CtrQbR)
+                      margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
                       width: double.infinity,
+                      height: 24,
                       child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(
-// popularjH9 (2:739)
-                            margin: EdgeInsets.fromLTRB(0, 0, 275, 2),
+// heart6xF (2:788)
+                            margin: EdgeInsets.fromLTRB(0, 3, 15, 0),
+                            width: 19,
+                            height: 16.62,
+                            child: Icon(Icons.discount_outlined),
+                          ),
+                          Container(
+// autogroupgic7cfh (WFB1oZRVfkg64J4bSrGic7)
+                            margin: EdgeInsets.fromLTRB(0, 0, 195, 0),
+                            padding: EdgeInsets.fromLTRB(0, 1, 0, 0),
+                            height: double.infinity,
                             child: Text(
-                              'Popular',
+                              'Discounted Items',
                               style: TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.w500,
@@ -131,35 +143,35 @@ class meone extends StatelessWidget {
                             ),
                           ),
                           Opacity(
-// group64qb5 (2:751)
+// group677sM (2:759)
                             opacity: 0.65,
                             child: Container(
                               width: 14,
                               height: 14,
-                              child: Image.asset(
-                                'images/k.png',
-                                width: 14,
-                                height: 14,
-                              ),
+                              child: Icon(Icons.arrow_forward_ios),
                             ),
                           ),
                         ],
                       ),
                     ),
-                    SizedBox(
-                      height: 7,
-                    ),
                     Container(
-// autogroupseydLXq (WFB1FpqNYvGzzzuniYSeyd)
-                      width: double.infinity,
+// autogroupht3uRd9 (WFB1uyQUX63ek5rDXkHT3u)
+                      margin: EdgeInsets.fromLTRB(2.23, 0, 0, 0),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(
-// treadingJDm (2:745)
-                            margin: EdgeInsets.fromLTRB(0, 0, 266, 0),
+// iconoutlinedapplicationdownloa (2:789)
+                            margin: EdgeInsets.fromLTRB(0, 0, 14.23, 1),
+                            width: 17.53,
+                            height: 16.5,
+                            child: Icon(Icons.note_add_outlined),
+                          ),
+                          Container(
+// downloadg3H (2:746)
+                            margin: EdgeInsets.fromLTRB(0, 0, 217, 0),
                             child: Text(
-                              'Treading',
+                              'My Purchases',
                               style: TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.w500,
@@ -169,56 +181,13 @@ class meone extends StatelessWidget {
                             ),
                           ),
                           Opacity(
-// group6529m (2:763)
+// group68PTV (2:771)
                             opacity: 0.65,
                             child: Container(
-                              margin: EdgeInsets.fromLTRB(0, 3, 0, 0),
+                              margin: EdgeInsets.fromLTRB(0, 1, 0, 0),
                               width: 14,
                               height: 14,
-                              child: Image.asset(
-                                'images/k.png',
-                                width: 14,
-                                height: 14,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      height: 7,
-                    ),
-                    Container(
-// autogroupiamvioH (WFB1PKct6DeSQ9z9oWiaMV)
-                      width: double.infinity,
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Container(
-// todaysw5 (2:749)
-                            margin: EdgeInsets.fromLTRB(0, 0, 286, 0),
-                            child: Text(
-                              'Today',
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w500,
-                                height: 1.5,
-                                color: Color(0xff000000),
-                              ),
-                            ),
-                          ),
-                          Opacity(
-// group66RBu (2:775)
-                            opacity: 0.65,
-                            child: Container(
-                              margin: EdgeInsets.fromLTRB(0, 0, 0, 1),
-                              width: 14,
-                              height: 14,
-                              child: Image.asset(
-                                'images/k.png',
-                                width: 14,
-                                height: 14,
-                              ),
+                              child: Icon(Icons.arrow_forward_ios),
                             ),
                           ),
                         ],
@@ -264,15 +233,15 @@ class meone extends StatelessWidget {
                             margin: EdgeInsets.fromLTRB(0, 3, 15, 0),
                             width: 19,
                             height: 16.62,
-                            child: Icon(Icons.favorite),
+                            child: Icon(Icons.phone_android_outlined),
                           ),
                           Container(
 // autogroupgic7cfh (WFB1oZRVfkg64J4bSrGic7)
-                            margin: EdgeInsets.fromLTRB(0, 0, 229, 0),
+                            margin: EdgeInsets.fromLTRB(0, 0, 200, 0),
                             padding: EdgeInsets.fromLTRB(0, 1, 0, 0),
                             height: double.infinity,
                             child: Text(
-                              'Favourite',
+                              'Digital Purchase',
                               style: TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.w500,
@@ -304,13 +273,13 @@ class meone extends StatelessWidget {
                             margin: EdgeInsets.fromLTRB(0, 0, 14.23, 1),
                             width: 17.53,
                             height: 16.5,
-                            child: Icon(Icons.download),
+                            child: Icon(Icons.wallet_travel),
                           ),
                           Container(
 // downloadg3H (2:746)
-                            margin: EdgeInsets.fromLTRB(0, 0, 223, 0),
+                            margin: EdgeInsets.fromLTRB(0, 0, 245, 0),
                             child: Text(
-                              'Download',
+                              'My Wallet',
                               style: TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.w500,
@@ -352,6 +321,7 @@ class meone extends StatelessWidget {
                   ),
                 ),
               ),
+
               Container(
 // autogroup2dsdPM1 (WFB3FmWBZgfEugjwmx2Dsd)
                 padding: EdgeInsets.fromLTRB(25, 18, 16, 152),
@@ -359,6 +329,7 @@ class meone extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
+
                     Container(
 // autogroupx66sKVZ (WFB2B8dtAc1tjDtbYmx66s)
                       margin: EdgeInsets.fromLTRB(1, 0, 0, 20),
@@ -370,13 +341,13 @@ class meone extends StatelessWidget {
                             margin: EdgeInsets.fromLTRB(0, 0, 12, 0),
                             width: 22,
                             height: 22,
-                            child: Icon(Icons.language),
+                            child: Icon(CupertinoIcons.heart),
                           ),
                           Container(
 // languagePVR (2:741)
-                            margin: EdgeInsets.fromLTRB(0, 0, 223, 0),
+                            margin: EdgeInsets.fromLTRB(0, 0, 250, 0),
                             child: Text(
-                              'Language',
+                              'My Likes',
                               style: TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.w500,
@@ -409,13 +380,52 @@ class meone extends StatelessWidget {
                             margin: EdgeInsets.fromLTRB(0, 1.05, 13.97, 0),
                             width: 20.01,
                             height: 19.45,
-                            child: Icon(Icons.dark_mode),
+                            child: Icon(Icons.sell_outlined),
                           ),
                           Container(
 // darkmodexqM (2:748)
-                            margin: EdgeInsets.fromLTRB(0, 0, 220, 0),
+                            margin: EdgeInsets.fromLTRB(0, 0, 230, 0),
                             child: Text(
-                              'Darkmode',
+                              'Start Selling',
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                                height: 1.5,
+                                color: Color(0xff000000),
+                              ),
+                            ),
+                          ),
+                          Opacity(
+// group70rvj (2:767)
+                            opacity: 0.65,
+                            child: Container(
+                              margin: EdgeInsets.fromLTRB(0, 1, 0, 0),
+                              width: 14,
+                              height: 14,
+                              child: Icon(Icons.arrow_forward_ios),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+// autogroup3bzrP83 (WFB2Ko47gKztSACXZN3bZR)
+                      margin: EdgeInsets.fromLTRB(1.02, 0, 0, 13),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+// umoonVRy (2:786)
+                            margin: EdgeInsets.fromLTRB(0, 1.05, 13.97, 0),
+                            width: 20.01,
+                            height: 19.45,
+                            child: Icon(CupertinoIcons.shopping_cart),
+                          ),
+                          Container(
+// darkmodexqM (2:748)
+                            margin: EdgeInsets.fromLTRB(0, 0, 200, 0),
+                            child: Text(
+                              'Following Shops',
                               style: TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.w500,
@@ -448,13 +458,13 @@ class meone extends StatelessWidget {
                             margin: EdgeInsets.fromLTRB(0, 0, 11, 0),
                             width: 24,
                             height: 24,
-                            child: Icon(Icons.wifi),
+                            child: Icon(CupertinoIcons.viewfinder_circle),
                           ),
                           Container(
 // onlydownloadviawifikPq (2:750)
-                            margin: EdgeInsets.fromLTRB(0, 1, 126, 0),
+                            margin: EdgeInsets.fromLTRB(0, 1, 200, 0),
                             child: Text(
-                              'Only Download via Wifi',
+                              'Recently Viewed',
                               style: TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.w500,

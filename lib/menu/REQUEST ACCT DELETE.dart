@@ -123,7 +123,7 @@ class RequestAcctDelete extends StatelessWidget {
                           foregroundColor:
                           MaterialStateProperty.all(Colors.white),
                           backgroundColor: MaterialStateProperty.all(
-                              Colors.green.shade600),
+                              Color(0xFF00695C)),
                           shape: MaterialStateProperty.all<
                               RoundedRectangleBorder>(
                               RoundedRectangleBorder(

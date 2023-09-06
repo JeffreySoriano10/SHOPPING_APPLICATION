@@ -14,7 +14,7 @@ class ItemsWidget extends StatelessWidget {
         for (int i = 1; i < 14; i++)
           Container(
             padding: EdgeInsets.only(left: 15, right: 15, top: 10),
-            margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+            margin: EdgeInsets.symmetric(vertical: 15, horizontal: 10),
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(20)),
             child: Column(
@@ -23,7 +23,7 @@ class ItemsWidget extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      padding: EdgeInsets.all(5),
+                      padding: EdgeInsets.all(3),
                       decoration: BoxDecoration(
                         color: Color(0xFF004D40),
                         borderRadius: BorderRadius.circular(20),
@@ -36,13 +36,12 @@ class ItemsWidget extends StatelessWidget {
                             fontWeight: FontWeight.bold),
                       ),
                     ),
-                    // Icon(
-                    //   Icons.favorite_border,
-                    //   color: Colors.red,
-                    // ),
                   ],
                 ),
-                InkWell(
+            Container(
+              padding: EdgeInsets.only(bottom: 4),
+              alignment: Alignment.center,
+                child: InkWell(
                   onTap: () {
                     Navigator.pushNamed(context, "itemPage");
                   },
@@ -50,11 +49,12 @@ class ItemsWidget extends StatelessWidget {
                     margin: EdgeInsets.all(10),
                     child: Image.asset("images/$i.png"),
                     height: 160,
-                    width: 160,
+                    width: 100,
                   ),
                 ),
+            ),
                 Container(
-                  padding: EdgeInsets.only(bottom: 8),
+                  padding: EdgeInsets.only(bottom: 4),
                   alignment: Alignment.centerLeft,
                   child: Text(
                     "Atsara",

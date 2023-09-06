@@ -80,7 +80,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                             borderRadius: BorderRadius.circular(40)),
                         suffixIcon: Icon(
                           Icons.check_circle,
-                          color: Colors.green,
+                          color: Color(0xFF00695C),
                           size: 32,
                         ),
                       ),
@@ -97,7 +97,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                             foregroundColor:
                                 MaterialStateProperty.all(Colors.white),
                             backgroundColor: MaterialStateProperty.all(
-                                Colors.green.shade600),
+                                Color(0xFF00695C)),
                             shape: MaterialStateProperty.all<
                                     RoundedRectangleBorder>(
                                 RoundedRectangleBorder(

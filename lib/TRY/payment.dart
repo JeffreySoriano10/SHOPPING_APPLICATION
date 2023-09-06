@@ -444,7 +444,7 @@ class payment extends StatelessWidget {
                 ),
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, "checkout");
+                    Navigator.pushNamed(context, "");
                   },
                   style: ButtonStyle(
                     foregroundColor: MaterialStateProperty.all(Colors.white),
@@ -459,7 +459,7 @@ class payment extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.all(0),
                     child: Text(
-                      "Pay Now",
+                      "Place Order",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                     ),
